@@ -1,7 +1,9 @@
 # 清一色アガり判定の練習
+* [アガり判定ページ](http://pitecan.com/Puzzle/Haipai/)で試すことができます
+
 ![](https://gyazo.com/ee3bdece307b3ff949974575c63ed3e4.png)
 
 * ランダムに取ってきた14枚が表示されます
 * アガっているか? 何を切れば聴牌するか? を考えます
 * クリックすると答が表示されます
-* [アガり判定ページ](http://pitecan.com/Puzzle/Haipai/)で試すことができます
+
