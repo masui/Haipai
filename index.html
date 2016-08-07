@@ -1,8 +1,12 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>清一アガり判定!</title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>清一アガり判定!</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <style type="text/css">
+    img { padding: 1pt; }
+    span { font-size: 20pt; }
+  </style>
 </head>
 <body>
 <script type="text/javascript">
@@ -29,19 +33,19 @@
         total += machi[i].length;
         if(machi[i].length > 0){
           nokori = 0;
-          $('body').append($('<img>').attr('src',images[i]).css('padding','1px'));
-          $('body').append($('<span>').css('font-size','20pt').text(" を切れば "));
+          $('body').append($('<img>').attr('src',images[i]));
+          $('body').append($('<span>').text(" を切れば "));
           for(var j=0;j<machi[i].length;j++){
             nokori += (4 - a[machi[i][j]]);
-            $('body').append($('<img>').attr('src',images[machi[i][j]]).css('padding','1px'));
+            $('body').append($('<img>').attr('src',images[machi[i][j]]));
           }
-          $('body').append($('<span>').css('font-size','20pt').text(" 待ち "));
-          $('body').append($('<span>').css('font-size','20pt').text(" (残り"+nokori+"枚)"));
+          $('body').append($('<span>').text(" 待ち "));
+          $('body').append($('<span>').text(" (残り"+nokori+"枚)"));
           $('body').append($('<p>'));
         }
       }
       if(total == 0){
-         $('body').append($('<span>').css('font-size','20pt').text("何を切っても聴牌ならずorz"));
+         $('body').append($('<span>').text("何を切っても聴牌ならずorz"));
       }
     }
   }
@@ -60,10 +64,10 @@
       pieces[j] = pieces[i];
       pieces[i] = tmp;
     }
-    pieces = pieces.slice(0,14).sort();
+    pieces = pieces.slice(0,14).sort(); // 14枚取得
     $('body').children().remove();
     for(i=0;i<14;i++){
-      $('body').append($('<img>').attr('src',images[pieces[i]]).css('padding','1px'));
+      $('body').append($('<img>').attr('src',images[pieces[i]]));
     }
     return pieces;
   }
