@@ -1,5 +1,5 @@
 # 清一色アガり判定の練習
-![](https://gyazo.comee3bdece307b3ff949974575c63ed3e4.png)
+![](https://gyazo.com/ee3bdece307b3ff949974575c63ed3e4.png)
 
 * ランダムに取ってきた14枚が表示されます
 * アガっているか? 何を切れば聴牌するか? を考えます
